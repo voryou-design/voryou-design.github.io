@@ -6,7 +6,7 @@ body, html{
 }
 
 body {
-  background: url(./assets/bg1.jpeg) repeat center center fixed;
+  background: url(./bg1.jpeg) repeat center center fixed;
   background-size: cover;
 }
 
