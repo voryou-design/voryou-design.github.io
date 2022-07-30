@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vor Your Design - Page</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () =>{
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        backgroundAlpha: 0.0,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        birdSize: 2.00,
+        wingSpan: 40.00,
+        speedLimit: 4.00,
+        separation: 100.00,
+        alignment: 60.00,
+        cohesion: 5.00,
+        quantity: 3.00
+      })
+
+      setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 1000)
+    })
+  </script>
+</head>
+<body>
+  <div id="vanta"></div>
+  <main>
+    <header>
+      <img src="./assets/LOGOH.png">
+      <h1>@voryour_design</h1>
+    </header>
+    <ul>
+      <li>
+        <a href="https://www.instagram.com/voryou_design/">
+          <img src="./assets/ig.jpeg" alt="Instagram" width="20"/>
+          Instagram
+        </a>
+      </li>
+      <li>
+        <a href="https://www.tokopedia.com/voryoudesign">
+          <img src="./assets/tokopedia.png" alt="Tokopedia" width="20"/>
+          Tokopedia
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./assets/shopee.png" alt="Shopee" width="20"/>
+          Shopee
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
